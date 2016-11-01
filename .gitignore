@@ -1,0 +1,101 @@
+Stack - shi ar unda agemateboddes 1MB s!
+heap - sheuzgudavi , unda mivutitot spec. brzanebit  ra mexsierebis bloki gamoyos , info ro wavikitxot blokidan unda vicodet nulovani elementis misamarti !
+int a ro vwert nishnavs ro gamoiyofa int is blokebi (4 byte - 4 bloki) 0123 4567 - int a s misamarti iqneba 0 int b s misamarti iqneba 4. 
+arsebobs specialuri struqtura sadac sheileba shevinaxot misamartebi , amisatvis gamoiyeneba pointeri int tipis pointeri anu int*p! 
+int a = 5;
+
+	int *p = &a;
+mocemulia a s mnishvneloba roca a s davuwert &-s mashin aigebs a s misamarts ! 5896456 aris ubralod misamarti anu is rac consoleshi gamoaq ! 
+masivis misamarti igivea rac masivi nulovani elementis misamarti , tito elementis misamarti iqneba gansxvavebuli 4-4 baitit ! mexsierebashi ertmanettan 
+dashorebulia 4-4 baitit ! INT ro davweret magitom izrdeba 4 it ! DOUBLE shemtxvevashi 8 it gaizdeboda ! CHAR is shemtxvevashi 1 it da ase shemdeg !
+roca pointers vzrdit 1 it am shemxtevvashi m s ( anu masivis pointers) shemdegi elementi iqneba 1 it anu 1*4 it gaizrdeba igivenairad ! 
+mag: m+5 igivea 5*4 baitze anu iqneba m[5] anu 20 it meti vidre iyo m[0] ! roca vwert &m s gviugdebs misamarts roca vwert *m s mnishvneloba gamoaq
+0-856 10 obit sistemashi 
+0 - FF 16 obiti ! 
+16 obitshi 10 aginishneba A
+11 - B
+12 - C
+13 - D
+14 - E
+15 - F
+
+
+
+
+
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+#include <stdlib.h>
+#include <stdio.h>
+
+
+main(){
+
+	
+	
+	
+
+	int m[100];
+	
+	
+	for (int i = 0; i < 100; i++)
+	{ 
+		m[i] = rand() % 100;
+
+		
+	}
+	for (int i = 0; i < 100; i++) {
+		printf("t[%02d] value = %02d , adress = %x\n", i, m[i], &m[i]);
+	}
+		
+
+	
+
+	
+	getchar();
+}
+
+zeda davaleba : avigot masivi 100elementiani shevavsot rand ricxvebit da gamovitanot es ricxvebi da mati misamartebi 
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+#include <stdlib.h>
+#include <stdio.h>
+
+
+	main()
+	{
+		srand(time(NULL));
+
+		int min = 1000;
+		int min_index = 0;
+		int max = 0;
+		int max_index = 0;
+
+
+		
+		int m[100];
+
+		for (int i = 0; i < 100; i++) {
+			m[i] = rand() % 1000;
+		}
+
+		for (int i = 0; i < 100; i++) {
+			if (m[i] > max) {
+			max = m[i];	
+			}
+			if (m[i] < min) {
+				min = m[i];
+				min_index = i;
+			}
+		}
+
+		printf("min: %03d\nmin adress: %x\nmax: %03d\nmax adress: %x", min, &m[min_index], max, &m[max_index]);
+
+	getchar();
+}
+
+zeda davaleba : avigot masivi 100 elementiani sheavset shemxtevviti ricxvebit ipovet min da max mnishvnelobebi da am min da max is misamartebi ! 
+
