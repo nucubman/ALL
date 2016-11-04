@@ -2,6 +2,17 @@ Stack - shi ar unda agemateboddes 1MB s!
 heap - sheuzgudavi , unda mivutitot spec. brzanebit  ra mexsierebis bloki gamoyos , info ro wavikitxot blokidan unda vicodet nulovani elementis misamarti !
 int a ro vwert nishnavs ro gamoiyofa int is blokebi (4 byte - 4 bloki) 0123 4567 - int a s misamarti iqneba 0 int b s misamarti iqneba 4. 
 arsebobs specialuri struqtura sadac sheileba shevinaxot misamartebi , amisatvis gamoiyeneba pointeri int tipis pointeri anu int*p! 
+malloc gcvchirdeba dinamiuri masivebis shesaqmnelad ! malloc(400) ! malloc - gamoyofs heap shi mexsierebas , int *a = (*int)malloc(400);(gadyaavs int titpis pointerad * ro movacilot gadaakomendirebs shignit! anu pointershi rac ricxvia imas int tipad daakopirebs)
+malloc abrunebs pointers ! define pointers ! mexsierebis blokshi mushaoba gvinda - tu int is gvinda abrunebs ints ! 
+shegvidzlia gavzardot da ashevamcirot gamoyofili bloki ! 400 nishnavs 400 byte s ! tu double gvaqvs int is magivrad abrunebs 8 ian pointers ! 
+a++; izrdeba misamartit tu int ia 4 it tu doublia 8 it tu charia 1 it ! double - viyenebt magali precision ricxvebis dros , magali sizustis ricvxvic ro ikos
+da paxodu didi ricxvic ro ikos ! 
+for(int i = 0; i = 100; i++)
+*(a+1) = rand % 100; - masivisa gareshe vmushaobt am shemxtevvashi ! gansazgvrul mocanamebtan roca ar gvaq saqme jobs masivis magivrad es gamovuiyenot !
+int *a = (*int)malloc(100*sizeof(int));
+*(a + 5) = 6 igivea rac a[5] = 6; gansxvaveba isaa ro meoreshi shezguduli vart 1MB shi da magitom ar vwert ! anu heapshi meorenairi ar iwereba !
+
+
 int a = 5;
 
 	int *p = &a;
