@@ -99,3 +99,32 @@ zeda davaleba : avigot masivi 100elementiani shevavsot rand ricxvebit da gamovit
 
 zeda davaleba : avigot masivi 100 elementiani sheavset shemxtevviti ricxvebit ipovet min da max mnishvnelobebi da am min da max is misamartebi ! 
 
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+main()
+{
+	srand(time(NULL));
+	int m[100];
+	int i = 0;
+	
+	for (i = 0; i < 100; i++) {
+		int r = rand() % 100;
+		m[i] = r;
+		if (r % 3 == 0) {
+			printf("%d - %d\n ", m[i],&m[i]);
+		}
+
+		
+	}
+
+	getchar();
+		
+}
+
+// avigot 100 elementiani masivi sheavset shemxtveviti ricvebit da gamotanet mxolod im  ricxvebis misamartebi romlebic arian 3 is jeradebi !
