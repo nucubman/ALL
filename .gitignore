@@ -139,3 +139,44 @@ main()
 }
 
 // avigot 100 elementiani masivi sheavset shemxtveviti ricvebit da gamotanet mxolod im  ricxvebis misamartebi romlebic arian 3 is jeradebi !
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <stdlib.h> 
+#include <conio.h>
+int isprime(int number) {
+	int k = 2;
+	int i = 1;
+	while (k <= number / 2) {
+		if (number % k == 0) {
+			i = 0;
+			break;
+		}
+		k++;
+	}
+
+	return i;
+}
+
+
+main()
+{
+	int m[100];
+	int i = 0;
+	int r = 0;
+	while (i < 100)
+	{
+		r = rand() % 100;
+		if (isprime(r)) {
+			m[i] = r;
+
+			if ((r + 1) % 3 == 0) {
+				printf("%02d = %d\n", m[i], &m[i]);
+			}
+			i++;
+		}
+	}
+	getchar();
+}
+
+zeda : shevavasot 100 elementiani masivi martivi ricxevbit da gamovitanot iseti ricxvebis misamartebi romelsacd damatebuli 1 iqneba 3 is jeradi ! 
